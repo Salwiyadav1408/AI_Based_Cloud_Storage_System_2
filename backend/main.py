@@ -3,6 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 import os
 
+
+app = FastAPI()
+
 from routes.auth import router as auth_router
 from routes.files import router as files_router
 
